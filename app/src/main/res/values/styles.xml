@@ -3,27 +3,33 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimary">@android:color/holo_orange_dark</item>
+        <item name="colorPrimaryDark">@android:color/holo_orange_dark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
     <!--titles font style-->
     <style name="AppTitlesStyle">
-        <item name="android:textSize">30dp</item>
+        <item name="android:textSize">24dp</item>
         <item name="android:textColor">@android:color/holo_orange_dark</item>
     </style>
 
     <!--Sub titles style-->
     <style name="SubTitlesStyle">
-        <item name="android:textSize">20dp</item>
+        <item name="android:textSize">18dp</item>
         <item name="android:textColor">@android:color/holo_orange_dark</item>
     </style>
 
     <!--content style-->
     <style name="ContentStyle">
-        <item name="android:textSize">24dp</item>
+        <item name="android:textSize">14dp</item>
         <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <!--author style-->
+    <style name="authorStyle">
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@android:color/darker_gray</item>
     </style>
 
 </resources>

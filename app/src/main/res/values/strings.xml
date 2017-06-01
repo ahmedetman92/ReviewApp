@@ -1,3 +1,12 @@
 <resources>
-    <string name="app_name">ReviewsApp</string>
+    <string name="app_name">Reviews</string>
+
+    <string name="title">title</string>
+    <string name="date">date</string>
+    <string name="author">author name</string>
+    <string name="message">message</string>
+    <string name="offline_error_message">:\'( an error occurred. please check your network</string>
+    <string name="error_message">:\'( an error occurred. we’ll be right back</string>
+
+
 </resources>

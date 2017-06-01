@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:orientation="vertical"
+        android:id="@+id/itemContainer"
+        android:clickable="true"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/row_layout_margin">
 
@@ -19,17 +21,19 @@
                 android:id="@+id/titleTextView"
                 style="@style/AppTitlesStyle"
                 android:layout_width="0dp"
+                android:gravity="start"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="title" />
+                android:text="@string/title" />
 
             <TextView
+                android:gravity="end"
                 android:id="@+id/dateTextView"
                 style="@style/SubTitlesStyle"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="date" />
+                android:text="@string/date" />
         </LinearLayout>
 
         <LinearLayout
@@ -42,14 +46,26 @@
                 style="@style/ContentStyle"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
-                android:text="content message" />
+                android:text="@string/message" />
 
             <TextView
                 android:id="@+id/authorTextView"
-                style="@style/ContentStyle"
+                style="@style/authorStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="author name" />
+                android:text="@string/author" />
+
+            <RatingBar
+                style="?android:attr/ratingBarStyleIndicator"
+                android:id="@+id/authorRateRatingBar"
+                android:progressTint="@android:color/holo_orange_dark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:isIndicator="true"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                />
 
         </LinearLayout>
     </LinearLayout>

@@ -2,7 +2,9 @@
 package com.example.ahmedetman.reviewsapp.models;
 
 
-public class DateUnformatted {
+import java.io.Serializable;
+
+public class DateUnformatted implements Serializable{
 
 
 }
