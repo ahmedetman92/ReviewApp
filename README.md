@@ -9,7 +9,7 @@ Also there is a details activity for displaying each review.
 There is network utile for checking the network availability 
 Also there is shared preferences manager for setting the data and getting it the device is offline
 
-# Mock [Posting New Review]
+# Mock API [Posting New Review]
 I assumed that the required fields are title, rating value and message.
 Then I made handler for mimicking the request that would take 2 seconds and the response returned with an object of 'Datum'
 that should be added to the reviews list
